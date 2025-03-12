@@ -1,5 +1,6 @@
 package gestorTienda;
 
+
 public class GestorTienda {
 	public double calcularDescuento(double precio, int cantidadComprada) {
         if (cantidadComprada >= 10) {
@@ -9,7 +10,6 @@ public class GestorTienda {
         }
         return 0;
     }
-    
     public String categorizarProducto(double precio) {
         if (precio < 10) {
             return "Económico";
@@ -19,7 +19,6 @@ public class GestorTienda {
             return "Premium";
         }
     }
-    
     public String buscarProducto(String[] inventario, String producto) {
         for (String item : inventario) {
             if (item.equalsIgnoreCase(producto)) {
